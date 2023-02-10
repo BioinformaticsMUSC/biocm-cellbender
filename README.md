@@ -15,9 +15,9 @@ For a batch job, remember to select a node with gpu access (musc3_gpu). In the P
 ```
 cd /zfs/musc3/singularity_images
 
-singularity exec --nv -B /scratch1/bryangranger/cecile:/mnt --pwd /mnt biocm-cellbender_latest.sif cellbender remove-background \
---input /mnt/project_directory/.../outs/{input file} \
---output /mnt/project_directory/cellbender_out/{output file} \
+singularity exec --nv -B /scratch1/bryangranger/project_directory:/mnt --pwd /mnt biocm-cellbender_latest.sif cellbender remove-background \
+--input /mnt/.../outs/{input file} \
+--output /mnt/.../cellbender_out/{output file} \
 --expected-cells {expected number of cells} \
 --fpr 0.01 \
 --epochs 150 \
