@@ -16,9 +16,9 @@ For a batch job, remember to select a node with gpu access (musc3_gpu). In the P
 cd /zfs/musc3/singularity_images
 
 singularity exec --nv -B /scratch1/bryangranger/cecile:/mnt --pwd /mnt biocm-cellbender_latest.sif cellbender remove-background \
---input {input file} \
---output {output file} \
---expected-cells 15000 \
+--input /mnt/project_directory/.../outs/{input file} \
+--output /mnt/project_directory/cellbender_out/{output file} \
+--expected-cells {expected number of cells} \
 --fpr 0.01 \
 --epochs 150 \
 --cuda
@@ -27,6 +27,7 @@ Note the following options:
 - `--nv`: this is required to enable CUDA within the container
 - `-B /zfs/musc3:/mnt`: this command creates a link between the source directory (here, `/zfs/musc3`) and the destination directory inside the container `/mnt`. You may link any source directory--those directories and files will then be accessible inside the container. If you save anything within those directories inside the container, it will exist when the container is done. 
 - `--pwd /mnt`: this sets the working directory inside the container to `/mnt`, which is the mounted volume linked to the source directory.
+It is not necessary to add any modules (e.g. for CUDA).
 
 ### Interactive use
 
