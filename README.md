@@ -55,3 +55,8 @@ cellbender remove-background \
 --epochs 150 \
 --cuda
 ```
+
+### What's new
+
+2/13/23 - Version 1.0.1
+- Installed seaborn and scanpy 
