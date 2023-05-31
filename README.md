@@ -58,5 +58,12 @@ cellbender remove-background \
 
 ### What's new
 
+5/30/23 - Version 1.1.0
+- Installed spatial tools: Tangram and Cell2Location
+- Installed Squidpy, a python-based framework for spatial transcriptomics data
+
+2/16/23 - Version 1.0.2
+- Installed scArches
+
 2/13/23 - Version 1.0.1
 - Installed seaborn and scanpy 

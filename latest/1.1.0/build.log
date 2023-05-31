@@ -1,0 +1,218 @@
+#1 [internal] load build definition from Dockerfile
+#1 sha256:f374b3506781aec4ba72ef69b1cc6e799a3279f6463138d4bffae9a4716d1c18
+#1 transferring dockerfile: 276B 0.0s
+#1 transferring dockerfile: 432B 0.1s done
+#1 DONE 0.2s
+
+#2 [internal] load .dockerignore
+#2 sha256:5b0051963bc9e103b56ce81450c68837a1f7b730d0ef3c8e3c4f09d96d0bad58
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/bioinformaticsmusc/biocm-cellbender:1.0.2
+#3 sha256:6000e6534c2953faaeaec5ee4abf75b71f6c1aa9e74f892f3c471024414f7c03
+#3 ...
+
+#4 [auth] bioinformaticsmusc/biocm-cellbender:pull token for registry-1.docker.io
+#4 sha256:e9830519c1a6204dce409bb987e20d5ea93a22c319c9ec2f93a66024e5981153
+#4 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/bioinformaticsmusc/biocm-cellbender:1.0.2
+#3 sha256:6000e6534c2953faaeaec5ee4abf75b71f6c1aa9e74f892f3c471024414f7c03
+#3 DONE 1.9s
+
+#5 [1/4] FROM docker.io/bioinformaticsmusc/biocm-cellbender:1.0.2@sha256:8f17e7ff151f27c74008ea8a0a704f85a99a0c7fa5c9acecd37123526865dd5c
+#5 sha256:04a331c3b1b0e81e3c16bf120b89adab5d918c3e0ad956546cd42d5d4da84ea2
+#5 DONE 0.0s
+
+#6 [2/4] RUN pip install cell2location
+#6 sha256:990c69cac8176fa4bcdf500640a603bd75f357f54fd0bc386f723027f8e2c6ec
+#6 CACHED
+
+#7 [3/4] RUN pip install tangram-sc
+#7 sha256:ad475821c487d90cd99e31b547a6afcdc4f1846b67354b8946408aa73874485f
+#7 CACHED
+
+#8 [4/4] RUN pip install squidpy
+#8 sha256:4686a1f272a182cf4dc3651be9ba75b9102efa5a5a249a9d2529349d3f7786fd
+#8 17.94 Collecting squidpy
+#8 18.61   Downloading squidpy-1.2.3-py3-none-any.whl (180 kB)
+#8 19.00      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 180.5/180.5 kB 1.0 MB/s eta 0:00:00
+#8 19.29 Requirement already satisfied: pandas>=1.5.0 in /opt/conda/lib/python3.9/site-packages (from squidpy) (1.5.3)
+#8 19.29 Requirement already satisfied: docrep>=0.3.1 in /opt/conda/lib/python3.9/site-packages (from squidpy) (0.3.2)
+#8 19.30 Requirement already satisfied: scikit-learn>=0.24.0 in /opt/conda/lib/python3.9/site-packages (from squidpy) (1.2.1)
+#8 19.94 Collecting tifffile!=2022.4.22
+#8 19.99   Downloading tifffile-2023.4.12-py3-none-any.whl (219 kB)
+#8 20.26      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 219.4/219.4 kB 872.5 kB/s eta 0:00:00
+#8 20.28 Requirement already satisfied: networkx>=2.6.0 in /opt/conda/lib/python3.9/site-packages (from squidpy) (3.0)
+#8 20.29 Requirement already satisfied: numpy>=1.21.6 in /opt/conda/lib/python3.9/site-packages (from squidpy) (1.23.5)
+#8 20.29 Requirement already satisfied: Pillow>=8.0.0 in /opt/conda/lib/python3.9/site-packages (from squidpy) (9.4.0)
+#8 20.42 Collecting omnipath>=1.0.5
+#8 20.51   Downloading omnipath-1.0.6-py3-none-any.whl (41 kB)
+#8 20.54      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.3/41.3 kB 2.2 MB/s eta 0:00:00
+#8 20.99 Collecting xarray>=0.16.1
+#8 21.05   Downloading xarray-2023.5.0-py3-none-any.whl (994 kB)
+#8 21.51      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 994.3/994.3 kB 2.3 MB/s eta 0:00:00
+#8 21.59 Requirement already satisfied: matplotlib!=3.6.1,>=3.3 in /opt/conda/lib/python3.9/site-packages (from squidpy) (3.6.3)
+#8 21.60 Requirement already satisfied: cycler>=0.11.0 in /opt/conda/lib/python3.9/site-packages (from squidpy) (0.11.0)
+#8 22.53 Collecting scikit-image>=0.19
+#8 22.64   Downloading scikit_image-0.20.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.2 MB)
+#8 30.21      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.2/13.2 MB 1.6 MB/s eta 0:00:00
+#8 31.28 Collecting dask-image>=0.5.0
+#8 31.34   Downloading dask_image-2023.3.0-py2.py3-none-any.whl (41 kB)
+#8 31.39      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.9/41.9 kB 1.1 MB/s eta 0:00:00
+#8 32.82 Collecting numba<0.56.0,>=0.55.0
+#8 32.95   Downloading numba-0.55.2-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (3.3 MB)
+#8 33.44      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 7.2 MB/s eta 0:00:00
+#8 33.85 Collecting validators>=0.18.2
+#8 33.97   Downloading validators-0.20.0.tar.gz (30 kB)
+#8 34.30   Preparing metadata (setup.py): started
+#8 46.27   Preparing metadata (setup.py): finished with status 'done'
+#8 46.48 Requirement already satisfied: scanpy>=1.8.0 in /opt/conda/lib/python3.9/site-packages (from squidpy) (1.9.1)
+#8 46.82 Collecting matplotlib-scalebar>=0.8.0
+#8 47.01   Downloading matplotlib_scalebar-0.8.1-py2.py3-none-any.whl (17 kB)
+#8 47.52 Collecting zarr>=2.6.1
+#8 47.66   Downloading zarr-2.14.2-py3-none-any.whl (203 kB)
+#8 47.94      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 203.3/203.3 kB 870.1 kB/s eta 0:00:00
+#8 47.96 Requirement already satisfied: statsmodels>=0.12.0 in /opt/conda/lib/python3.9/site-packages (from squidpy) (0.13.5)
+#8 48.73 Collecting dask[array]>=2021.02.0
+#8 49.04   Downloading dask-2023.5.1-py3-none-any.whl (1.2 MB)
+#8 49.50      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 2.7 MB/s eta 0:00:00
+#8 49.60 Requirement already satisfied: aiohttp>=3.8.1 in /opt/conda/lib/python3.9/site-packages (from squidpy) (3.8.4)
+#8 49.60 Requirement already satisfied: leidenalg>=0.8.2 in /opt/conda/lib/python3.9/site-packages (from squidpy) (0.9.1)
+#8 49.61 Requirement already satisfied: tqdm>=4.50.2 in /opt/conda/lib/python3.9/site-packages (from squidpy) (4.64.1)
+#8 49.61 Requirement already satisfied: typing-extensions in /opt/conda/lib/python3.9/site-packages (from squidpy) (4.4.0)
+#8 49.62 Requirement already satisfied: anndata>=0.7.4 in /opt/conda/lib/python3.9/site-packages (from squidpy) (0.8.0)
+#8 49.62 Requirement already satisfied: fsspec>=2021.11.0 in /opt/conda/lib/python3.9/site-packages (from squidpy) (2023.1.0)
+#8 49.72 Requirement already satisfied: async-timeout<5.0,>=4.0.0a3 in /opt/conda/lib/python3.9/site-packages (from aiohttp>=3.8.1->squidpy) (4.0.2)
+#8 49.73 Requirement already satisfied: attrs>=17.3.0 in /opt/conda/lib/python3.9/site-packages (from aiohttp>=3.8.1->squidpy) (22.2.0)
+#8 49.73 Requirement already satisfied: frozenlist>=1.1.1 in /opt/conda/lib/python3.9/site-packages (from aiohttp>=3.8.1->squidpy) (1.3.3)
+#8 49.74 Requirement already satisfied: multidict<7.0,>=4.5 in /opt/conda/lib/python3.9/site-packages (from aiohttp>=3.8.1->squidpy) (6.0.4)
+#8 49.74 Requirement already satisfied: aiosignal>=1.1.2 in /opt/conda/lib/python3.9/site-packages (from aiohttp>=3.8.1->squidpy) (1.3.1)
+#8 49.74 Requirement already satisfied: yarl<2.0,>=1.0 in /opt/conda/lib/python3.9/site-packages (from aiohttp>=3.8.1->squidpy) (1.8.2)
+#8 49.75 Requirement already satisfied: charset-normalizer<4.0,>=2.0 in /opt/conda/lib/python3.9/site-packages (from aiohttp>=3.8.1->squidpy) (3.0.1)
+#8 49.90 Requirement already satisfied: h5py>=3 in /opt/conda/lib/python3.9/site-packages (from anndata>=0.7.4->squidpy) (3.8.0)
+#8 49.90 Requirement already satisfied: scipy>1.4 in /opt/conda/lib/python3.9/site-packages (from anndata>=0.7.4->squidpy) (1.10.0)
+#8 49.90 Requirement already satisfied: natsort in /opt/conda/lib/python3.9/site-packages (from anndata>=0.7.4->squidpy) (8.2.0)
+#8 49.91 Requirement already satisfied: packaging>=20 in /opt/conda/lib/python3.9/site-packages (from anndata>=0.7.4->squidpy) (21.3)
+#8 50.24 Collecting pims>=0.4.1
+#8 50.32   Downloading PIMS-0.6.1.tar.gz (86 kB)
+#8 50.37      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 86.0/86.0 kB 2.2 MB/s eta 0:00:00
+#8 50.59   Preparing metadata (setup.py): started
+#8 59.18   Preparing metadata (setup.py): finished with status 'done'
+#8 59.66 Requirement already satisfied: toolz>=0.10.0 in /opt/conda/lib/python3.9/site-packages (from dask[array]>=2021.02.0->squidpy) (0.12.0)
+#8 59.67 Requirement already satisfied: pyyaml>=5.3.1 in /opt/conda/lib/python3.9/site-packages (from dask[array]>=2021.02.0->squidpy) (6.0)
+#8 59.67 Requirement already satisfied: click>=8.0 in /opt/conda/lib/python3.9/site-packages (from dask[array]>=2021.02.0->squidpy) (8.1.3)
+#8 59.68 Requirement already satisfied: importlib-metadata>=4.13.0 in /opt/conda/lib/python3.9/site-packages (from dask[array]>=2021.02.0->squidpy) (6.0.0)
+#8 60.05 Collecting cloudpickle>=1.5.0
+#8 60.17   Downloading cloudpickle-2.2.1-py3-none-any.whl (25 kB)
+#8 60.37 Collecting partd>=1.2.0
+#8 60.58   Downloading partd-1.4.0-py3-none-any.whl (18 kB)
+#8 60.62 Requirement already satisfied: six in /opt/conda/lib/python3.9/site-packages (from docrep>=0.3.1->squidpy) (1.16.0)
+#8 60.80 Requirement already satisfied: igraph<0.11,>=0.10.0 in /opt/conda/lib/python3.9/site-packages (from leidenalg>=0.8.2->squidpy) (0.10.4)
+#8 60.88 Requirement already satisfied: contourpy>=1.0.1 in /opt/conda/lib/python3.9/site-packages (from matplotlib!=3.6.1,>=3.3->squidpy) (1.0.7)
+#8 60.88 Requirement already satisfied: kiwisolver>=1.0.1 in /opt/conda/lib/python3.9/site-packages (from matplotlib!=3.6.1,>=3.3->squidpy) (1.4.4)
+#8 60.89 Requirement already satisfied: fonttools>=4.22.0 in /opt/conda/lib/python3.9/site-packages (from matplotlib!=3.6.1,>=3.3->squidpy) (4.38.0)
+#8 60.90 Requirement already satisfied: pyparsing>=2.2.1 in /opt/conda/lib/python3.9/site-packages (from matplotlib!=3.6.1,>=3.3->squidpy) (3.0.4)
+#8 60.91 Requirement already satisfied: python-dateutil>=2.7 in /opt/conda/lib/python3.9/site-packages (from matplotlib!=3.6.1,>=3.3->squidpy) (2.8.2)
+#8 62.66 Collecting llvmlite<0.39,>=0.38.0rc1
+#8 62.85   Downloading llvmlite-0.38.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (34.5 MB)
+#8 75.11      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 34.5/34.5 MB 1.2 MB/s eta 0:00:00
+#8 77.38 Requirement already satisfied: setuptools in /opt/conda/lib/python3.9/site-packages (from numba<0.56.0,>=0.55.0->squidpy) (61.2.0)
+#8 80.15 Collecting numpy>=1.21.6
+#8 80.42   Downloading numpy-1.22.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.8 MB)
+#8 83.92      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.8/16.8 MB 4.9 MB/s eta 0:00:00
+#8 85.60 Requirement already satisfied: requests>=2.24.0 in /opt/conda/lib/python3.9/site-packages (from omnipath>=1.0.5->squidpy) (2.28.2)
+#8 85.60 Requirement already satisfied: urllib3>=1.26.0 in /opt/conda/lib/python3.9/site-packages (from omnipath>=1.0.5->squidpy) (1.26.14)
+#8 86.81 Collecting wrapt>=1.12.0
+#8 86.87   Downloading wrapt-1.15.0-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (78 kB)
+#8 86.94      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.3/78.3 kB 1.5 MB/s eta 0:00:00
+#8 87.20 Collecting inflect>=4.1.0
+#8 87.41   Downloading inflect-6.0.4-py3-none-any.whl (34 kB)
+#8 87.68 Requirement already satisfied: pytz>=2020.1 in /opt/conda/lib/python3.9/site-packages (from pandas>=1.5.0->squidpy) (2022.7.1)
+#8 88.21 Requirement already satisfied: joblib in /opt/conda/lib/python3.9/site-packages (from scanpy>=1.8.0->squidpy) (1.2.0)
+#8 88.21 Requirement already satisfied: patsy in /opt/conda/lib/python3.9/site-packages (from scanpy>=1.8.0->squidpy) (0.5.3)
+#8 88.22 Requirement already satisfied: session-info in /opt/conda/lib/python3.9/site-packages (from scanpy>=1.8.0->squidpy) (1.0.0)
+#8 88.22 Requirement already satisfied: umap-learn>=0.3.10 in /opt/conda/lib/python3.9/site-packages (from scanpy>=1.8.0->squidpy) (0.5.3)
+#8 88.23 Requirement already satisfied: seaborn in /opt/conda/lib/python3.9/site-packages (from scanpy>=1.8.0->squidpy) (0.12.2)
+#8 89.16 Collecting lazy_loader>=0.1
+#8 89.22   Downloading lazy_loader-0.2-py3-none-any.whl (8.6 kB)
+#8 90.03 Collecting PyWavelets>=1.1.1
+#8 90.15   Downloading PyWavelets-1.4.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (6.9 MB)
+#8 91.53      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 5.1 MB/s eta 0:00:00
+#8 92.52 Collecting imageio>=2.4.1
+#8 92.68   Downloading imageio-2.30.0-py3-none-any.whl (312 kB)
+#8 92.84      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 312.7/312.7 kB 2.6 MB/s eta 0:00:00
+#8 94.68 Collecting scipy>1.4
+#8 94.82   Downloading scipy-1.9.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (43.9 MB)
+#8 105.6      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.9/43.9 MB 1.7 MB/s eta 0:00:00
+#8 110.0 Requirement already satisfied: threadpoolctl>=2.0.0 in /opt/conda/lib/python3.9/site-packages (from scikit-learn>=0.24.0->squidpy) (3.1.0)
+#8 110.8 Collecting decorator>=3.4.0
+#8 110.9   Downloading decorator-5.1.1-py3-none-any.whl (9.1 kB)
+#8 112.8 Collecting numcodecs>=0.10.0
+#8 113.1   Downloading numcodecs-0.11.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (6.7 MB)
+#8 115.5      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.7/6.7 MB 2.9 MB/s eta 0:00:00
+#8 117.3 Collecting asciitree
+#8 117.9   Downloading asciitree-0.3.3.tar.gz (4.0 kB)
+#8 118.4   Preparing metadata (setup.py): started
+#8 128.2   Preparing metadata (setup.py): finished with status 'done'
+#8 128.6 Collecting fasteners
+#8 128.7   Downloading fasteners-0.18-py3-none-any.whl (18 kB)
+#8 130.1 Requirement already satisfied: texttable>=1.6.2 in /opt/conda/lib/python3.9/site-packages (from igraph<0.11,>=0.10.0->leidenalg>=0.8.2->squidpy) (1.6.7)
+#8 130.5 Requirement already satisfied: zipp>=0.5 in /opt/conda/lib/python3.9/site-packages (from importlib-metadata>=4.13.0->dask[array]>=2021.02.0->squidpy) (3.13.0)
+#8 132.2 Collecting pydantic>=1.9.1
+#8 132.3   Downloading pydantic-1.10.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.2 MB)
+#8 133.2      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 4.0 MB/s eta 0:00:00
+#8 133.9 Collecting entrypoints
+#8 134.2   Downloading entrypoints-0.4-py3-none-any.whl (5.3 kB)
+#8 134.7 Collecting locket
+#8 134.8   Downloading locket-1.0.0-py2.py3-none-any.whl (4.4 kB)
+#8 135.2 Collecting slicerator>=0.9.8
+#8 135.3   Downloading slicerator-1.1.0-py3-none-any.whl (10 kB)
+#8 135.6 Requirement already satisfied: certifi>=2017.4.17 in /opt/conda/lib/python3.9/site-packages (from requests>=2.24.0->omnipath>=1.0.5->squidpy) (2022.6.15)
+#8 135.6 Requirement already satisfied: idna<4,>=2.5 in /opt/conda/lib/python3.9/site-packages (from requests>=2.24.0->omnipath>=1.0.5->squidpy) (3.4)
+#8 136.1 Requirement already satisfied: pynndescent>=0.5 in /opt/conda/lib/python3.9/site-packages (from umap-learn>=0.3.10->scanpy>=1.8.0->squidpy) (0.5.8)
+#8 137.1 Requirement already satisfied: stdlib-list in /opt/conda/lib/python3.9/site-packages (from session-info->scanpy>=1.8.0->squidpy) (0.8.0)
+#8 138.1 Building wheels for collected packages: validators, pims, asciitree
+#8 138.2   Building wheel for validators (setup.py): started
+#8 151.4   Building wheel for validators (setup.py): finished with status 'done'
+#8 151.5   Created wheel for validators: filename=validators-0.20.0-py3-none-any.whl size=19582 sha256=a57e2fc20e4eddd18849ef4edc5dc404320976455544fd032f0e538ce1f01c53
+#8 151.5   Stored in directory: /root/.cache/pip/wheels/2d/f0/a8/1094fca7a7e5d0d12ff56e0c64675d72aa5cc81a5fc200e849
+#8 151.7   Building wheel for pims (setup.py): started
+#8 163.1   Building wheel for pims (setup.py): finished with status 'done'
+#8 163.1   Created wheel for pims: filename=PIMS-0.6.1-py3-none-any.whl size=82636 sha256=06e3648d511fd3c912cb763924ea6c95e3489b16c0b1912efbd323f2b53f3c27
+#8 163.1   Stored in directory: /root/.cache/pip/wheels/c8/51/78/e8155864f53ff0c9e01fe656f64b55712ba60fb2a451757505
+#8 163.2   Building wheel for asciitree (setup.py): started
+#8 172.1   Building wheel for asciitree (setup.py): finished with status 'done'
+#8 172.2   Created wheel for asciitree: filename=asciitree-0.3.3-py3-none-any.whl size=5050 sha256=bdae44965c59ac78d1304593dec3151eeddebb567f6b4c62aee2f7d3fbf1f3b9
+#8 172.2   Stored in directory: /root/.cache/pip/wheels/07/00/bc/937e878be0d781a569792a1e0e5acf149e463d4536453ec978
+#8 172.2 Successfully built validators pims asciitree
+#8 178.9 Installing collected packages: slicerator, asciitree, wrapt, pydantic, numpy, locket, llvmlite, lazy_loader, fasteners, entrypoints, decorator, cloudpickle, validators, tifffile, scipy, PyWavelets, partd, numcodecs, numba, inflect, imageio, zarr, xarray, scikit-image, pims, omnipath, dask, matplotlib-scalebar, dask-image, squidpy
+#8 180.4   Attempting uninstall: numpy
+#8 180.4     Found existing installation: numpy 1.23.5
+#8 182.2     Uninstalling numpy-1.23.5:
+#8 187.6       Successfully uninstalled numpy-1.23.5
+#8 197.8   Attempting uninstall: llvmlite
+#8 197.8     Found existing installation: llvmlite 0.39.1
+#8 197.9     Uninstalling llvmlite-0.39.1:
+#8 201.2       Successfully uninstalled llvmlite-0.39.1
+#8 205.8   Attempting uninstall: scipy
+#8 205.9     Found existing installation: scipy 1.10.0
+#8 208.5     Uninstalling scipy-1.10.0:
+#8 222.4       Successfully uninstalled scipy-1.10.0
+#8 258.4   Attempting uninstall: numba
+#8 258.5     Found existing installation: numba 0.56.4
+#8 263.2     Uninstalling numba-0.56.4:
+#8 269.0       Successfully uninstalled numba-0.56.4
+#8 311.4 Successfully installed PyWavelets-1.4.1 asciitree-0.3.3 cloudpickle-2.2.1 dask-2023.5.1 dask-image-2023.3.0 decorator-5.1.1 entrypoints-0.4 fasteners-0.18 imageio-2.30.0 inflect-6.0.4 lazy_loader-0.2 llvmlite-0.38.1 locket-1.0.0 matplotlib-scalebar-0.8.1 numba-0.55.2 numcodecs-0.11.0 numpy-1.22.4 omnipath-1.0.6 partd-1.4.0 pims-0.6.1 pydantic-1.10.8 scikit-image-0.20.0 scipy-1.9.1 slicerator-1.1.0 squidpy-1.2.3 tifffile-2023.4.12 validators-0.20.0 wrapt-1.15.0 xarray-2023.5.0 zarr-2.14.2
+#8 311.4 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#8 DONE 331.8s
+
+#9 exporting to image
+#9 sha256:e8c613e07b0b7ff33893b694f7759a10d42e180f2b4dc349fb57dc6b71dcab00
+#9 exporting layers
+#9 exporting layers 13.0s done
+#9 writing image sha256:d6ef38b2f39d56ba2f12f92e6284bf1c83b315842be69cf3ee943ec9236c78a5
+#9 writing image sha256:d6ef38b2f39d56ba2f12f92e6284bf1c83b315842be69cf3ee943ec9236c78a5 0.0s done
+#9 naming to docker.io/bioinformatics/biocm-cellbender:1.1.0 done
+#9 DONE 13.3s
